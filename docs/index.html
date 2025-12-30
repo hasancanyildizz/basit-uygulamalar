@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Legal Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00FF88, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .habit-tracker .app-icon {
+            background: linear-gradient(135deg, #00FF88, #00CC6A);
+        }
+        .focus-flow .app-icon {
+            background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+        }
+        .app-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .app-card p {
+            color: #888;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .link-group {
+            margin-bottom: 15px;
+        }
+        .link-group-title {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .links a.primary {
+            background: linear-gradient(90deg, #00FF88, #00CC6A);
+            color: #000;
+            font-weight: 600;
+        }
+        .links a.secondary {
+            background: linear-gradient(90deg, #8B5CF6, #6D28D9);
+            color: #fff;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+        footer a {
+            color: #00FF88;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .app-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Legal Documents</h1>
+            <p class="subtitle">Privacy Policy & Terms of Service for our apps</p>
+        </header>
+
+        <div class="apps-grid">
+            <div class="app-card habit-tracker">
+                <div class="app-icon">✓</div>
+                <h2>Habit Tracker</h2>
+                <p>Build better habits with streak tracking, XP rewards, and daily reminders. Your data stays private on your device.</p>
+
+                <div class="link-group">
+                    <div class="link-group-title">English</div>
+                    <div class="links">
+                        <a href="habittracker/privacy-policy.html" class="primary">Privacy Policy</a>
+                        <a href="habittracker/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="link-group">
+                    <div class="link-group-title">Türkçe</div>
+                    <div class="links">
+                        <a href="habittracker/gizlilik-politikasi.html" class="primary">Gizlilik Politikası</a>
+                        <a href="habittracker/kullanim-kosullari.html">Kullanım Koşulları</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-card focus-flow">
+                <div class="app-icon">⏱</div>
+                <h2>FocusFlow</h2>
+                <p>Pomodoro timer for focused work sessions. Track tasks, take breaks, and boost your productivity.</p>
+
+                <div class="link-group">
+                    <div class="link-group-title">English</div>
+                    <div class="links">
+                        <a href="focusflow/privacy-policy.html" class="secondary">Privacy Policy</a>
+                        <a href="focusflow/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+
+                <div class="link-group">
+                    <div class="link-group-title">Türkçe</div>
+                    <div class="links">
+                        <a href="focusflow/gizlilik-politikasi.html" class="secondary">Gizlilik Politikası</a>
+                        <a href="focusflow/kullanim-kosullari.html">Kullanım Koşulları</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 All rights reserved.</p>
+            <p style="margin-top: 10px;">Contact: <a href="mailto:support@example.com">support@example.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
